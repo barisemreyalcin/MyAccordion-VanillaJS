@@ -49,6 +49,7 @@ body {
     align-items: center;
     gap: 1rem;
     margin: .75rem 0;
+    transition: .5s;
 
     height: 0;
     overflow: hidden;
@@ -69,7 +70,7 @@ body {
 }
 
 .accordion-title::after {
-    content: "\f078";
+    content: '\f078';
     font-family: FontAwesome;
     position: absolute;
     right: 0;
@@ -117,4 +118,10 @@ body {
 
 .social-link:last-child .fa-brands {
     font-weight: 700;
+}
+
+/* JavaScript Styles */
+.accordion-content.active {
+    height: 12.5rem;
+    transition: .5s;
 }
